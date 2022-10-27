@@ -2,7 +2,7 @@
     <div >
         <div class="llista ">
             <div class="col-sm-8 mx-auto  p-3 m-3  bg-dark" v-for="(item, i) in getStarShips.results" :key="i">
-                <a class="nav-link  bg-dark text-secondary " href="#"
+                <a class="nav-link  bg-dark text-secondary "
                     @click="setInfoShip(item), imatge(item), showImageShip(item), panell()">
                     <h5 class="bg-dark">{{ item.name }}</h5>
                     <h6 class="bg-dark">{{ item.model }}</h6>

@@ -17,14 +17,12 @@
     </div>
 </template>
 <script>
-import { mapGetters, mapMutations, mapState } from 'vuex'
+import { mapGetters } from 'vuex'
 
 export default {
     name: 'infoShip',
     computed: {
-        ...mapGetters(['getInfoShips', ' getImageShips']),
-        ...mapMutations(['setImageShips']),
-        ...mapState(['imageShips', 'numImg']),
+        ...mapGetters(['getInfoShips']),
 
     },
 }

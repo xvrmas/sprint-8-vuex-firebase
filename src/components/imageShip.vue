@@ -4,14 +4,12 @@
     </div>
 </template>
 <script>
-import { mapGetters, mapMutations, mapState } from 'vuex'
+import { mapState } from 'vuex'
 
 export default {
     name: 'imageShip',
     computed: {
-        ...mapGetters(['getInfoShips', ' getImageShips']),
-        ...mapMutations(['setImageShips']),
-        ...mapState(['imageShips', 'numImg']),
+        ...mapState(['imageShips']),
 
     },
 }
